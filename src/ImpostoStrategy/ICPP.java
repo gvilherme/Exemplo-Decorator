@@ -2,6 +2,16 @@ package ImpostoStrategy;
 import Entities.Orcamento;
 
 public class ICPP extends CalculaImpostoComFaixa{
+	
+	public ICPP() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public ICPP(Imposto imposto) {
+		super(imposto);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	protected double executaUmaFaixa(Orcamento orcamento) {		

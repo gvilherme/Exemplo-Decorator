@@ -3,7 +3,7 @@ import Entities.Orcamento;
 
 public class CalculadoraDeImpostos {
 	
-	public static double getAliquota(Orcamento orcamento, IImposto imposto) {
+	public static double getAliquota(Orcamento orcamento, Imposto imposto) {
 		return imposto.calculaImposto(orcamento);
 	}
 }

@@ -4,6 +4,14 @@ import Entities.Orcamento;
 
 public class IKCV extends CalculaImpostoComFaixa {
 
+	public IKCV() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public IKCV(Imposto imposto) {
+		super(imposto);
+	}
+	
 	@Override
 	protected double executaUmaFaixa(Orcamento orcamento) {
 		if (orcamento.getValorTotal() > 500 && orcamento.getItems().stream().filter(i -> i.getValorUnit() > 100.0).count() >= 1) {
